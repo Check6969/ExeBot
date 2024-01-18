@@ -1,23 +1,73 @@
-<!doctype html>
-<html lang="vn">
+<!DOCTYPE html>
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ExeBot Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ExeBot</title>
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
+
   <body>
-    <header>ExeBot's Trang mạng</header>
-    <main>
-      <h2>Chào mừng đén với website của chúng tôi</h2>
-      <p class="animated-text">Chúng tôi là cộng đồng khai thác Roblox</p>
-      <p>Bot này an toàn và dễ sử dụng 100%</p>
-      <p>Để bắt đầu, hãy sử dụng /help để xem các lệnh</p>
-      <p>Đảm bảo tham gia máy chủ của chúng tôi hoặc mời bot!</p>
-      <a href="https://discord.gg/shavEb3Jgb" class="invite-button">
-        Hãy tham gia máy chủ của chúng tôi!
-      </a>
-      <a href="https://bit.ly/Exebot2" class="invite-button"> Mời ExeBot </a>
-    </main>
+    <canvas class="orb-canvas"></canvas>
+
+    <div class="overlay">
+      <div class="overlay__inner">
+        <h1 class="overlay__title">
+          Chào mừng bạn đến với
+          <span
+            style="
+              background: linear-gradient(to right, #5f06f8, #ce06b8);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >ExoBot's</span
+          >
+          Website!
+          <span class="overlay__title-emoji">👋</span>
+        </h1>
+
+        <p class="overlay__description">
+          Chúng tôi là Cộng đồng Exploit Roblox! Bot của chúng tôi là 100%
+          <strong>miễn phí</strong> & <strong>dễ sử dụng!</strong>
+          <strong>Sử dụng lệnh /help để bắt đầu!.</strong>
+        </p>
+
+        <div class="overlay__btns">
+          <button class="overlay__btn overlay__btn--transparent">
+            <a
+              href="https://discord.com/oauth2/authorize?client_id=1153022351760433192&permissions=964220676160&scope=bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mời Bot!
+            </a>
+          </button>
+
+          <button class="overlay__btn overlay__btn--colors">
+            <a
+              href="https://discord.com/invite/shavEb3Jgb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tham gia Discord của chúng tôi!
+            </a>
+            <span class="overlay__btn-emoji">🔗</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const sr = ScrollReveal();
+      sr.reveal("h1, p, span, strong, a", {
+        origin: "bottom",
+        distance: "50px",
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
