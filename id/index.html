@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExeBot</title>
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <canvas class="orb-canvas"></canvas>
+
+    <div class="overlay">
+      <div class="overlay__inner">
+        <h1 class="overlay__title">
+          Selamat datang di
+          <span
+            style="
+              background: linear-gradient(to right, #5f06f8, #ce06b8);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >ExeBot's</span
+          >
+          Website!
+          <span class="overlay__title-emoji">👋</span>
+        </h1>
+
+        <p class="overlay__description">
+          Kami adalah Komunitas Exploit Roblox! Bot kami 100%
+          <strong>gratis digunakan</strong> & <strong>mudah digunakan!</strong>
+          <strong>Gunakan perintah /help untuk memulai!.</strong>
+        </p>
+
+        <div class="overlay__btns">
+          <button class="overlay__btn overlay__btn--transparent">
+            <a
+              href="https://discord.com/oauth2/authorize?client_id=1153022351760433192&permissions=964220676160&scope=bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Undang Bot!
+            </a>
+          </button>
+
+          <button class="overlay__btn overlay__btn--colors">
+            <a
+              href="https://discord.com/invite/shavEb3Jgb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bergabung dengan Discord kami!
+            </a>
+            <span class="overlay__btn-emoji">🔗</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const sr = ScrollReveal();
+      sr.reveal("h1, p, span, strong, a", {
+        origin: "bottom",
+        distance: "50px",
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
