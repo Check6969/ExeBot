@@ -2,7 +2,7 @@
 // It may work or may not!
 // TODO: Find testers
 
-const defaultLocale = "en-US";
+const defaultLocale = "vn-Vietnamese";
 
 const locale =
   navigator.language ||
