@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site do ExeBot</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        Site do ExeBot
-    </header>
-    <main>
-        <h2>Bem-vindo ao nosso site!</h2>
-        <p class="animated-text">Somos uma comunidade de exploiters do Roblox</p>
-        <p>Este bot é 100% seguro e fácil de usar</p>
-        <p>Para começar, use /help para visualizar comandos</p>
-        <p>Certifique-se de entrar em nosso servidor ou convide o bot!</p>
-                <a href="https://discord.gg/shavEb3Jgb" class="invite-button">
-            Junte-se ao nosso servidor do Discord!
-        </a>
-                    <a href="https://bit.ly/Exebot2" class="invite-button">
-            Convidar ExeBot
-        </a>
-    </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExeBot</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <canvas class="orb-canvas"></canvas>
+
+    <div class="overlay">
+      <div class="overlay__inner">
+        <h1 class="overlay__title">
+          Bem-vindo ao 
+          <span
+            style="
+              background: linear-gradient(to right, #5f06f8, #ce06b8);
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >ExeBot's</span
+          >
+          Local na rede Internet!
+          <span class="overlay__title-emoji">👋</span>
+        </h1>
+
+        <p class="overlay__description">
+          Somos uma comunidade Roblox Exploit! Nosso bot está 100% 
+          <strong>livre para usar</strong> & <strong>fácil de usar!</strong>
+          <strong>Use o comando /help para começar!.</strong>
+        </p>
+
+        <div class="overlay__btns">
+          <button class="overlay__btn overlay__btn--transparent">
+            <a
+              href="https://discord.com/oauth2/authorize?client_id=1153022351760433192&permissions=964220676160&scope=bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Convide o bot!
+            </a>
+          </button>
+
+          <button class="overlay__btn overlay__btn--colors">
+            <a
+              href="https://discord.com/invite/shavEb3Jgb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Junte-se ao nosso Discord!
+            </a>
+            <span class="overlay__btn-emoji">🔗</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const sr = ScrollReveal();
+
+      sr.reveal("h1, p, span, strong, a", {
+        origin: "bottom",
+        distance: "50px",
+        duration: 1000,
+      });
+    </script>
+  </body>
 </html>
