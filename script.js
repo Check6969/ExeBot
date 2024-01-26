@@ -3,6 +3,7 @@
 // TODO: Find testers
 
 const defaultLocale = "en-US";
+const { MessageEmbed } = require('discord.js');
 
 const locale =
   navigator.language ||
@@ -14,3 +15,13 @@ if (locale.startsWith("vi")) {
 } else if (locale === "id-ID") {
   window.location.href = "/id"; // indonesian version
 }
+
+const embed = new MessageEmbed()
+  .setTitle('Exebots Website')
+  .setDescription('Description of your website')
+  .setURL('https://exebot.vercel.app/')
+  .setColor('#7289DA'); 
+
+// Assuming 'message' is your Discord.js message object
+message.channel.send(embed);
+
